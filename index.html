@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Calculation Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <!-- Home Screen -->
+        <div id="home-screen">
+            <h1>DAILY CALCULATION TEST</h1>
+            <p class="subtitle">Daily Calculation Practice</p>
+            <button id="start-btn" class="primary-btn">START DAILY TEST</button>
+            <p class="description">Complete the entire calculation test. Your result will be shown only after submission.</p>
+        </div>
+
+        <!-- Test Screen -->
+        <div id="test-screen" class="hidden">
+            <div id="timer-display">00:00</div>
+            
+            <div class="section" id="section-squares">
+                <h2>Squares — 11 to 125</h2>
+                <div class="grid-7-cols" id="squares-grid"></div>
+            </div>
+
+            <div class="section" id="section-cubes">
+                <h2>Cubes — 1 to 30</h2>
+                <div class="grid-6-cols" id="cubes-grid"></div>
+            </div>
+
+            <div class="section" id="section-tables">
+                <h2>Tables — 12 to 25</h2>
+                <div class="table-container">
+                    <table id="tables-grid">
+                        <!-- Table generated via JS -->
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" id="section-consecutive">
+                <h2>Consecutive Number Multiplication</h2>
+                <div class="grid-3-cols" id="consecutive-grid"></div>
+            </div>
+
+            <div class="section" id="section-fractions">
+                <h2>Fractions — convert to percentage</h2>
+                <div id="fractions-grid"></div>
+            </div>
+
+            <button id="submit-btn" class="primary-btn submit-btn">SUBMIT TEST</button>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hidden">
+            <h1>DAILY TEST COMPLETE</h1>
+            
+            <div id="results-container"></div>
+
+            <div class="overall-result" id="overall-result">
+                <!-- populated by JS -->
+            </div>
+
+            <div class="review-section" id="review-section">
+                <h2>REVIEW MISTAKES</h2>
+                <div id="mistakes-container"></div>
+            </div>
+
+            <button id="home-btn" class="primary-btn" style="margin-top: 30px;">Return to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
