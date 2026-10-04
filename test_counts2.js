@@ -68,10 +68,10 @@ console.log("Squares:", squaresCount, "Expected: 115");
 console.log("Cubes:", cubesCount, "Expected: 30");
 console.log("Tables inputs:", tablesInputCount, "Expected: 140");
 console.log("Consecutive:", consecutiveCount, "Expected: 9");
-console.log("Fractions:", fractionsCount, "Expected: 46");
+console.log("Fractions:", fractionsCount, "Expected: 52");
 
 const total = squaresCount + cubesCount + tablesInputCount + consecutiveCount + fractionsCount;
-console.log("Total:", total, "Expected: 340");
+console.log("Total:", total, "Expected: 346");
 
 const allQuestions = new Set();
 let duplicates = 0;
