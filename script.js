@@ -98,28 +98,28 @@ function generateTables() {
     let corner = document.createElement('th');
     corner.innerText = '×';
     headerRow.appendChild(corner);
-    for (let c = 12; c <= 25; c++) {
+    for (let c = 1; c <= 10; c++) {
         let th = document.createElement('th');
         th.innerText = c;
         headerRow.appendChild(th);
     }
     table.appendChild(headerRow);
     
-    for (let r = 1; r <= 10; r++) {
+    for (let r = 12; r <= 25; r++) {
         let tr = document.createElement('tr');
         let rowHead = document.createElement('th');
         rowHead.innerText = r;
         tr.appendChild(rowHead);
         
-        for (let c = 12; c <= 25; c++) {
+        for (let c = 1; c <= 10; c++) {
             let td = document.createElement('td');
             const input = document.createElement('input');
             input.type = 'number';
             input.step = 'any';
             input.className = 'test-input table-input';
             input.dataset.section = 'Tables';
-            input.dataset.question = `${c} × ${r}`;
-            input.dataset.answer = c * r;
+            input.dataset.question = `${r} × ${c}`;
+            input.dataset.answer = r * c;
             td.appendChild(input);
             tr.appendChild(td);
         }
